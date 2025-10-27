@@ -1,0 +1,8 @@
+MVP.jcoDestination
+archive/
+output/
+.Rproj.user/ 
+k8s/github-token-secret.yaml
+k8s/smb-secret.yaml
+k8s/sap-destination-secret.yaml
+k8s/github-token-secret-backup.yaml
