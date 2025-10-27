@@ -1,9 +1,39 @@
-# Export des prix moyens pondérés de SAP vers Coptis
+# 🧠 prices-sap-to-coptis
 
-Les scripts de ce projet peuvent être utilisés pour exporter les prix moyens pondérés de SAP
-vers Coptis.
+![GitHub repo size](https://img.shields.io/github/repo-size/StrandCosmeticsEurope-it/prices-sap-to-coptis)
+![GitHub last commit](https://img.shields.io/github/last-commit/StrandCosmeticsEurope-it/prices-sap-to-coptis)
+![Java](https://img.shields.io/badge/Java-8+-red)
+![Groovy](https://img.shields.io/badge/Groovy-3.x-blue)
+![R](https://img.shields.io/badge/R-4.x-lightgrey)
+![License](https://img.shields.io/badge/license-proprietary-orange)
 
+---
+
+## 🧩 Description  
+Ce projet permet d’**exporter les prix moyens pondérés depuis SAP** et de les **transférer vers Coptis**.  
+Il combine un script **Groovy** (connexion à SAP via JCo3) et un script **R** pour le traitement des données.
 Le répertoire K8S contient un job pour automatiser l'exécution de ces scripts sur Kubernetes.
+
+---
+
+## ⚙️ Prérequis  
+Avant toute installation, assure-toi que ton environnement contient les éléments suivants :
+
+### 🖥️ Logiciels requis  
+| Logiciel         | Lien de téléchargement                                         | Version recommandée   |
+|------------------|----------------------------------------------------------------|------------------------|
+| **Java JDK**     | [https://adoptium.net/](https://adoptium.net/)                | 8 ou supérieur         |
+| **Groovy**       | [https://groovy.apache.org/download.html](https://groovy.apache.org/download.html) | 3.x                   |
+| **R**            | [https://cran.r-project.org/](https://cran.r-project.org/)    | 4.x ou supérieur       |
+| **Git**          | [https://git-scm.com/downloads](https://git-scm.com/downloads) | Dernière version       |
+| *(Optionnel)* **Kubernetes (kubectl)** | [https://kubernetes.io/docs/tasks/tools/](https://kubernetes.io/docs/tasks/tools/) | Pour automatisation   |
+
+### 📦 Packages R nécessaires  
+Dans R (ou RStudio) installe :
+```r
+install.packages(c("dplyr", "readr", "tidyr"))
+
+---
 
 ## Déploiement sur K8S
 
